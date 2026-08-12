@@ -5,13 +5,23 @@ import { useTheme } from '@/hooks/useTheme';
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
-  const handleToggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+  const isDark = theme === 'dark';
 
   return (
-    <button type="button" className="btn btn-outline-secondary" onClick={handleToggleTheme}>
-      {theme === 'light' ? '🌙 Modo Escuro' : '☀️ Modo Claro'}
-    </button>
+    <div className="theme-switch-container">
+      <span className="theme-icon">☀️</span>
+
+      <div className="form-check form-switch">
+        <input
+          className="form-check-input theme-switch"
+          type="checkbox"
+          role="switch"
+          checked={isDark}
+          onChange={() => setTheme(isDark ? 'light' : 'dark')}
+        />
+      </div>
+
+      <span className="theme-icon">🌙</span>
+    </div>
   );
 }

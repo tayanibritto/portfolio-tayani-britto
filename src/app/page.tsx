@@ -1,18 +1,31 @@
 'use client';
 
-import { ThemeToggle } from '@/components/ThemeToggle/ThemeToggle';
-import { useTheme } from '@/hooks/useTheme';
+import { Header } from '@/components/Header/Header';
+import { Hero } from '@/sections/Hero/Hero';
+import { Sobre } from '@/sections/Sobre/Sobre';
+import { Tecnologias } from '@/sections/Tecnologias/Tecnologias';
+import { Projetos } from '@/sections/Projetos/Projetos';
+import { Experiencia } from '@/sections/Experiência/Experiencia';
+import { Certificacoes } from '@/sections/Certificações/Certificacoes';
+import { Contato } from '@/sections/Contato/Contato';
+import { Footer } from '@/components/Footer/Footer';
 
 export default function Home() {
-  const { theme } = useTheme();
-
   return (
-    <main className="container py-5">
-      <h1 className="text-primary">Meu Portfólio</h1>
+    <>
+      <Header />
 
-      <p className="lead">Tema atual: {theme}</p>
+      <main>
+        <Hero />
+        <Sobre />
+        <Tecnologias />
+        <Projetos />
+        <Experiencia />
+        <Certificacoes />
+        <Contato />
+      </main>
 
-      <ThemeToggle />
-    </main>
+      <Footer />
+    </>
   );
 }

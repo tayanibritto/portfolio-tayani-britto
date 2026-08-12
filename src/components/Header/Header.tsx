@@ -4,7 +4,7 @@ import { ThemeToggle } from '@/components/ThemeToggle/ThemeToggle';
 
 export function Header() {
   return (
-    <header className="sticky-top bg-body border-bottom">
+    <header className="bg-body border-bottom app-header">
       <nav className="navbar navbar-expand-lg container">
         <a className="navbar-brand" href="#hero">
           Tayani Britto

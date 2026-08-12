@@ -38,6 +38,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  padding-top: 80px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -67,6 +71,16 @@ a {
 .btn-outline-primary:hover {
   background-color: #e86a92;
   border-color: #e86a92;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  z-index: 1030;
 }
 
 .hero-image {

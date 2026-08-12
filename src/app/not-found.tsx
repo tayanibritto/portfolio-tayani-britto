@@ -11,7 +11,7 @@ export default function NotFound() {
         A página que você tentou acessar não existe ou foi movida para outro endereço.
       </p>
 
-      <Link href="/" className="btn btn-primary">
+      <Link href="/" className="btn btn-outline-primary">
         Voltar para a página inicial
       </Link>
     </main>

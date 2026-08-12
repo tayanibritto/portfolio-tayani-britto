@@ -38,12 +38,15 @@ Este projeto foi desenvolvido para consolidar conhecimentos em React, Next.js e 
 ```bash
 git clone https://github.com/tayanibritto/portfolio-tayani-britto.git
 ```
+
 ```bash
 cd portfolio-tayani-britto
 ```
+
 ```bash
 npm install
 ```
+
 ```bash
 npm run dev
 ```

@@ -23,7 +23,7 @@ jobs:
           node-version: 22
 
       - name: Instalação de dependências
-        run: npm ci
+        run: npm install
 
       - name: Rodar Prettier Check
         run: npm run format:check

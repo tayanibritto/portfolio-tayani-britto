@@ -20,7 +20,7 @@ jobs:
       - name: Instalação do Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
 
       - name: Instalação de dependências
         run: npm ci

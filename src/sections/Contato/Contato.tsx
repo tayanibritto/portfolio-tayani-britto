@@ -7,16 +7,31 @@ export function Contato() {
 
       <p>Estou sempre aberta a novas oportunidades, projetos e conexões profissionais.</p>
 
-      <div className="d-flex gap-4 flex-wrap mb-4">
-        <a href="mailto:mad.britto@gmail.com" target="_blank">
-          Enviar e-mail
-        </a>
-        <a href="https://github.com/tayanibritto" target="_blank">
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/tayani-britto/" target="_blank">
-          LinkedIn
-        </a>
+      <div className="row g-4 mt-4">
+        <div className="col-12 col-md-4">
+          <a href="mailto:mad.britto@gmail.com" target="_blank" className="contact-card">
+            📧 Enviar e-mail
+            <p>Entre em contato diretamente.</p>
+          </a>
+        </div>
+
+        <div className="col-12 col-md-4">
+          <a href="https://github.com/tayanibritto" target="_blank" className="contact-card">
+            🐙 GitHub
+            <p>Veja projetos e código-fonte</p>
+          </a>
+        </div>
+
+        <div className="col-12 col-md-4">
+          <a
+            href="https://www.linkedin.com/in/tayani-britto/"
+            target="_blank"
+            className="contact-card"
+          >
+            💼 LinkedIn
+            <p>Vamos nos conectar.</p>
+          </a>
+        </div>
       </div>
     </section>
   );

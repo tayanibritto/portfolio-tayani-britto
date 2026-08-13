@@ -207,6 +207,26 @@ a {
   box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
 }
 
+.contact-card {
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid rgba(232, 106, 146, 0.25);
+  border-radius: 1rem;
+  background-color: rgba(232, 106, 146, 0.03);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: #e86a92;
+  box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
+}
+
 .footer {
   border-top: 1px solid rgba(232, 106, 146, 0.15);
   background-color: rgba(232, 106, 146, 0.03);
@@ -265,6 +285,11 @@ a {
 [data-bs-theme='dark'] .experience-card {
   background-color: rgba(240, 139, 171, 0.06);
   border-color: rgba(240, 139, 171, 0.025);
+}
+
+[data-bs-theme='dark'] .contact-card {
+  background-color: rgba(240, 139, 171, 0.06);
+  border-color: rgba(240, 139, 171, 0.25);
 }
 
 [data-bs-theme='dark'] .footer {

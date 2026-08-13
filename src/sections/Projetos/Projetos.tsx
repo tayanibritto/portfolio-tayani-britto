@@ -29,9 +29,11 @@ export function Projetos() {
                 ))}
               </div>
 
-              <a href="{project.githubUrl}" target="_blank">
-                GitHub
-              </a>
+              <div className="project-footer">
+                <a href={project.githubUrl} target="_blank">
+                  🐙 GitHub
+                </a>
+              </div>
             </article>
           </div>
         ))}

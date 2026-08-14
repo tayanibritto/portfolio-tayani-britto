@@ -159,9 +159,9 @@ a:hover {
   display: none;
 }
 
-.theme-switch:checked {
-  background-color: #ffe8f0;
-  border-color: #d85a81;
+.form-check-input.theme-switch:checked {
+  background-color: #ffe8f0 !important;
+  border-color: #d85a81 !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23e86a92'/%3e%3c/svg%3e") !important;
 }
 
@@ -179,6 +179,23 @@ a:hover {
 .theme-switch:focus-visible,
 .theme-switch:checked:focus,
 .theme-switch:checked:focus-visible {
+  box-shadow: none !important;
+}
+
+.form-check-input.theme-switch:checked {
+  background-color: #ffe8f0 !important;
+
+  border-color: #d85a81 !important;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23e86a92'/%3e%3c/svg%3e") !important;
+}
+
+.form-check-input.theme-switch:focus,
+.form-check-input.theme-switch:checked:focus,
+.form-check-input.theme-switch:focus-visible,
+.form-check-input.theme-switch:checked:focus-visible {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23e86a92'/%3e%3c/svg%3e") !important;
+
   box-shadow: none !important;
 }
 
@@ -241,11 +258,13 @@ a:hover {
   border: 1px solid rgba(232, 106, 146, 0.25);
   border-radius: 1rem;
   background-color: rgba(232, 106, 146, 0.03);
-  transition: transform 0.3s ease box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .experience-card:hover {
-  transform: translateY (-4px);
+  transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
 }
 

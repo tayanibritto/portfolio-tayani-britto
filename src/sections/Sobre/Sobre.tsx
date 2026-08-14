@@ -9,7 +9,7 @@ export function Sobre() {
     <section id="sobre" className="container py-5 border-top">
       <h2 className="display-6 fw-bold mb-4">Sobre Mim</h2>
 
-      <p className="lead">
+      <p className="lead text-primary">
         Sou desenvolvedora em formação, com foco em Desenvolvimento Full Stack Python e Front-End,
         em transição de carreira após mais de uma década de experiência na área administrativa e
         educacional do setor público.
@@ -17,7 +17,7 @@ export function Sobre() {
 
       {expanded && (
         <>
-          <p className="lead">
+          <p>
             Minha relação com a tecnologia não é recente. Sou graduada em Tecnologia em Análise e
             Desenvolvimento de Sistemas desde 2012 e, desde minha adolescência, já explorava HTML,
             CSS, JavaScript e PHP por interesse próprio. Embora minha trajetória profissional tenha
@@ -25,7 +25,7 @@ export function Sobre() {
             esteve presente como uma paixão e um objetivo de longo prazo.
           </p>
 
-          <p className="lead">
+          <p>
             Atuei desde 2013 na Secretaria da Educação do Estado de São Paulo, na Diretoria de
             Ensino - Região de Lins, onde trabalhei nas áreas de recursos humanos, finanças e
             liderança, chegando a ocupar o cargo de Diretora do Núcleo de Finanças. Essa vivência me
@@ -33,7 +33,7 @@ export function Sobre() {
             sistêmica, tomada de decisão, gestão de processos e trabalho em equipe.
           </p>
 
-          <p className="lead">
+          <p>
             Durante esse período, também adquiri sólida familiaridade com legislações, com destaque
             para a Lei Geral de Proteção de Dados (LGPD), tema extremamente relevante para a área de
             tecnologia da informação. Além disso, tive experiência com trabalho remoto, utilizando
@@ -41,7 +41,7 @@ export function Sobre() {
             autonomia e disciplina.
           </p>
 
-          <p className="lead">
+          <p>
             Em 2025, decidi retomar ativamente minha área de formação e direcionar minha carreira
             para o desenvolvimento de software. Atualmente, curso Desenvolvimento Full Stack Python
             pela EBAC - Escola Britânica de Artes Criativas e Tecnologia, com foco também em
@@ -51,7 +51,7 @@ export function Sobre() {
             para tornar meus projetos seguros e confiáveis.
           </p>
 
-          <p className="lead">
+          <p>
             Acredito que minha bagagem profissional, aliada à minha formação técnica e ao
             aprendizado contínuo, possibilita que eu ofereça não apenas código, mas também
             maturidade profissional, responsabilidade e visão de negócio. Estou motivada e

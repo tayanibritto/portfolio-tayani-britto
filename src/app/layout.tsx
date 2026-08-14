@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import type { Metadata } from 'next';
+import { BootstrapClient } from '@/components/BootstrapClient/BootstrapClient';
 
 export const metadata: Metadata = {
   title: 'Tayani Britto | Desenvolvedora Full Stack Python',
@@ -44,7 +45,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <BootstrapClient />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

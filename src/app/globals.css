@@ -349,7 +349,7 @@ a:hover {
 
 [data-bs-theme='dark'] .experience-card {
   background-color: rgba(240, 139, 171, 0.06);
-  border-color: rgba(240, 139, 171, 0.025);
+  border-color: rgba(240, 139, 171, 0.25);
 }
 
 [data-bs-theme='dark'] .contact-card {
@@ -360,4 +360,25 @@ a:hover {
 [data-bs-theme='dark'] .footer {
   background-color: rgba(240, 139, 171, 0.03);
   border-color: rgba(240, 139, 171, 0.15);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .navbar-nav .nav-link {
+    display: inline-block;
+  }
+
+  .theme-switch-container {
+    width: fit-content;
+    margin: 1rem auto 0;
+  }
+
+  .navbar-nav .nav-item.ms-lg-2 {
+    display: flex;
+    justify-content: center;
+  }
 }

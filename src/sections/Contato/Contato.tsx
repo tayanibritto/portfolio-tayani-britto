@@ -1,4 +1,52 @@
+'use client';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { contactSchema, type ContactFormData } from '@/schemas/contactSchema';
+
 export function Contato() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema),
+  });
+
+  async function onSubmit(data: ContactFormData) {
+    try {
+      setIsSubmitting(true);
+      setSuccessMessage('');
+      setErrorMessage('');
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!result.success) {
+        throw new Error('Erro ao enviar mensagem.');
+      }
+
+      setSuccessMessage('Mensagem enviada com sucesso!');
+
+      reset();
+    } catch {
+      setErrorMessage('Não foi possível enviar a mensagem.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section id="contato" className="container py-5 border-top">
       <h2 className="display-6 fw-bold mb-4">Contato</h2>
@@ -7,14 +55,7 @@ export function Contato() {
 
       <p>Estou sempre aberta a novas oportunidades, projetos e conexões profissionais.</p>
 
-      <div className="row g-4 mt-4">
-        <div className="col-12 col-md-4">
-          <a href="mailto:mad.britto@gmail.com" target="_blank" className="contact-card">
-            📧 Enviar e-mail
-            <p>Entre em contato diretamente.</p>
-          </a>
-        </div>
-
+      <div className="row g-5 mt-4">
         <div className="col-12 col-md-4">
           <a href="https://github.com/tayanibritto" target="_blank" className="contact-card">
             🐙 GitHub
@@ -31,6 +72,45 @@ export function Contato() {
             💼 LinkedIn
             <p>Vamos nos conectar.</p>
           </a>
+        </div>
+
+        <div className="mt-5">
+          <h3 className="h4 mb-4">Ou envie uma mensagem:</h3>
+
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="mb-3">
+              <label className="form-label">Nome </label>
+              <input type="text" className="form-control" {...register('name')} />
+
+              {errors.name && <small className="text-danger">{errors.name.message}</small>}
+            </div>
+
+            <div className="mb-3">
+              <label className="form-label">E-mail </label>
+              <input type="email" className="form-control" {...register('email')} />
+
+              {errors.email && <small className="text-danger">{errors.email.message}</small>}
+            </div>
+
+            <div className="mb-3">
+              <label className="form-label">Mensagem </label>
+              <textarea rows={6} className="form-control" {...register('message')} />
+
+              {errors.message && <small className="text-danger">{errors.message.message}</small>}
+            </div>
+
+            <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px' }}>
+              <input type="text" tabIndex={-1} autoComplete="off" {...register('website')} />
+            </div>
+
+            <button type="submit" className="btn btn-outline-primary" disabled={isSubmitting}>
+              {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
+            </button>
+
+            {successMessage && <p className="text-success mt-3">{successMessage}</p>}
+
+            {errorMessage && <p className="text-danger mt-3">{errorMessage}</p>}
+          </form>
         </div>
       </div>
     </section>

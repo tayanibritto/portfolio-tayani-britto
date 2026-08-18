@@ -79,22 +79,40 @@ export function Contato() {
 
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-3">
-              <label className="form-label">Nome </label>
-              <input type="text" className="form-control" {...register('name')} />
+              <label htmlFor="name" className="form-label">
+                Nome{' '}
+              </label>
+              <input
+                id="name"
+                type="text"
+                autoComplete="name"
+                className="form-control"
+                {...register('name')}
+              />
 
               {errors.name && <small className="text-danger">{errors.name.message}</small>}
             </div>
 
             <div className="mb-3">
-              <label className="form-label">E-mail </label>
-              <input type="email" className="form-control" {...register('email')} />
+              <label htmlFor="email" className="form-label">
+                E-mail{' '}
+              </label>
+              <input
+                id="email"
+                type="email"
+                autoComplete="email"
+                className="form-control"
+                {...register('email')}
+              />
 
               {errors.email && <small className="text-danger">{errors.email.message}</small>}
             </div>
 
             <div className="mb-3">
-              <label className="form-label">Mensagem </label>
-              <textarea rows={6} className="form-control" {...register('message')} />
+              <label htmlFor="message" className="form-label">
+                Mensagem{' '}
+              </label>
+              <textarea id="message" rows={6} className="form-control" {...register('message')} />
 
               {errors.message && <small className="text-danger">{errors.message.message}</small>}
             </div>

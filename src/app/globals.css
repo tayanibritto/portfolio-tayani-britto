@@ -1,16 +1,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --bs-primary: #e86a92;
+  --bs-primary: #c44572;
   --bs-primary-rgb: 232, 106, 146;
-  --brand-primary: #e86a92;
+  --brand-primary: #c44572;
   --brand-primary-hover: #d85a81;
   --brand-primary-soft: #fff1f5;
   --brand-primary-dark: #f08bab;
 }
 
 .text-primary {
-  color: #e86a92 !important;
+  color: #c44572 !important;
 }
 
 html {
@@ -57,12 +57,12 @@ a {
 }
 
 a:hover {
-  color: #e86a92;
+  color: #c44572;
 }
 
 .btn-primary {
-  background-color: #e86a92;
-  border-color: #e86a92;
+  background-color: #c44572;
+  border-color: #c44572;
 }
 
 .btn-primary:hover {
@@ -71,13 +71,13 @@ a:hover {
 }
 
 .btn-outline-primary {
-  color: #e86a92;
-  border-color: #e86a92;
+  color: #c44572;
+  border-color: #c44572;
 }
 
 .btn-outline-primary:hover {
-  background-color: #e86a92;
-  border-color: #e86a92;
+  background-color: #c44572;
+  border-color: #c44572;
 }
 
 .nav-link {
@@ -92,7 +92,7 @@ a:hover {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: #e86a92;
+  background-color: #c44572;
   transition: width 0.3s ease;
 }
 
@@ -122,11 +122,11 @@ a:hover {
   opacity: 1;
   transform: scale(1.03);
   box-shadow: 0 15px 35px rgba(232, 106, 146, 0.25);
-  border-color: #e86a92;
+  border-color: #c44572;
 }
 
 .form-check-input:focus {
-  border-color: #e86a92;
+  border-color: #c44572;
   box-shadow: 0 0 0 0.25rem rgba(232, 106, 146, 0.25);
 }
 
@@ -201,10 +201,10 @@ a:hover {
 
 .tech-badge {
   padding: 0.6rem 0.9rem;
-  border: 1px solid #e86a92;
+  border: 1px solid #c44572;
   border-radius: 999px;
   background-color: transparent;
-  color: #e86a92;
+  color: #c44572;
   font-size: 0.9rem;
   font-weight: 500;
   transition:
@@ -214,7 +214,7 @@ a:hover {
 }
 
 .tech-badge:hover {
-  background-color: #e86a92;
+  background-color: #c44572;
   color: white;
   transform: translateY(-2px);
   cursor: default;
@@ -236,12 +236,12 @@ a:hover {
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: #e86a92;
+  border-color: #c44572;
   box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
 }
 
 .project-link {
-  color: #e86a92;
+  color: #c44572;
   font-weight: 500;
 }
 
@@ -284,13 +284,13 @@ a:hover {
 
 .contact-card:hover {
   transform: translateY(-4px);
-  border-color: #e86a92;
+  border-color: #c44572;
   box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
 }
 
 .form-control {
   background-color: var(--background);
-  border: 1px solid #e86a92;
+  border: 1px solid #c44572;
   color: var(--foreground);
   transition:
     background-color 0.3s ease,
@@ -320,7 +320,7 @@ a:hover {
 }
 
 .footer-name {
-  color: #e86a92;
+  color: #c44572;
   font-weight: 600;
 }
 

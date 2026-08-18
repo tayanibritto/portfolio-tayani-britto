@@ -118,7 +118,14 @@ export function Contato() {
             </div>
 
             <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px' }}>
-              <input type="text" tabIndex={-1} autoComplete="off" {...register('website')} />
+              <label htmlFor="website">Website</label>
+              <input
+                id="website"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                {...register('website')}
+              />
             </div>
 
             <button type="submit" className="btn btn-outline-primary" disabled={isSubmitting}>

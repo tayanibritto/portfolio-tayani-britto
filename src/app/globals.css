@@ -325,42 +325,42 @@ a:hover {
 }
 
 .footer-tech {
-  opacity: 0.7;
+  opacity: 1;
   font-size: 0.9rem;
 }
 
 [data-bs-theme='dark'] {
   --background: #121212;
   --foreground: #f1f1f1;
-  --bs-primary: #f08bab;
+  --bs-primary: #f08daf;
   --bs-primary-rgb: 240, 139, 171;
 }
 
 [data-bs-theme='dark'] .text-primary {
-  color: #f08bab !important;
+  color: #f08daf !important;
 }
 
 [data-bs-theme='dark'] .btn-outline-primary {
-  color: #f08bab;
-  border-color: #f08bab;
+  color: #f08daf;
+  border-color: #f08daf;
 }
 
 [data-bs-theme='dark'] .btn-outline-primary:hover {
-  background-color: #f08bab;
+  background-color: #f08daf;
   color: #121212;
 }
 
 [data-bs-theme='dark'] .nav-link::after {
-  background-color: #f08bab;
+  background-color: #f08daf;
 }
 
 [data-bs-theme='dark'] .tech-badge {
-  border-color: #f08bab;
-  color: #f08bab;
+  border-color: #f08daf;
+  color: #f08daf;
 }
 
 [data-bs-theme='dark'] .tech-badge:hover {
-  background-color: #f08bab;
+  background-color: #f08daf;
   color: #121212;
 }
 
@@ -370,7 +370,7 @@ a:hover {
 }
 
 [data-bs-theme='dark'] .project-card:hover {
-  border-color: #f08bab;
+  border-color: #f08daf;
 }
 
 [data-bs-theme='dark'] .experience-card {
@@ -385,14 +385,14 @@ a:hover {
 
 [data-bs-theme='dark'] .form-control {
   background-color: var(--background);
-  border-color: #f08bab;
+  border-color: #f08daf;
   color: var(--foreground);
 }
 
 [data-bs-theme='dark'] .form-control:hover,
 [data-bs-theme='dark'] .form-control:focus {
   background-color: rgba(240, 139, 171, 0.08);
-  border-color: #f08bab;
+  border-color: #f08daf;
   color: var(--foreground);
 }
 

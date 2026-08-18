@@ -20,6 +20,7 @@ Este projeto foi desenvolvido para consolidar conhecimentos em React, Next.js e 
 - Commitlint
 - GitHub Actions
 - Vercel
+- Resend
 
 ## Funcionalidades
 
@@ -61,6 +62,7 @@ O projeto utiliza:
 - Commitlint
 - Jest
 - GitHub Actions
+- Formulário controlado por API: Resend
 
 ## Deploy
 

@@ -6,7 +6,7 @@
   --brand-primary: #c44572;
   --brand-primary-hover: #d85a81;
   --brand-primary-soft: #fff1f5;
-  --brand-primary-dark: #f08bab;
+  --brand-primary-dark: #ffb3c7;
 }
 
 .text-primary {
@@ -241,7 +241,7 @@ a:hover {
 }
 
 .project-link {
-  color: #c44572;
+  color: var(--brand-primary);
   font-weight: 500;
 }
 
@@ -320,7 +320,7 @@ a:hover {
 }
 
 .footer-name {
-  color: #c44572;
+  color: var(--brand-primary);
   font-weight: 600;
 }
 
@@ -337,7 +337,7 @@ a:hover {
 }
 
 [data-bs-theme='dark'] .text-primary {
-  color: #f08daf !important;
+  color: #ffb3c7 !important;
 }
 
 [data-bs-theme='dark'] .btn-outline-primary {
@@ -348,6 +348,10 @@ a:hover {
 [data-bs-theme='dark'] .btn-outline-primary:hover {
   background-color: #f08daf;
   color: #121212;
+}
+
+[data-bs-theme='dark'] a:hover {
+  color: #ffd3df;
 }
 
 [data-bs-theme='dark'] .nav-link::after {
@@ -371,6 +375,10 @@ a:hover {
 
 [data-bs-theme='dark'] .project-card:hover {
   border-color: #f08daf;
+}
+
+[data-bs-theme='dark'] .project-link {
+  color: var(--brand-primary-dark);
 }
 
 [data-bs-theme='dark'] .experience-card {
@@ -403,6 +411,10 @@ a:hover {
 [data-bs-theme='dark'] .footer {
   background-color: rgba(240, 139, 171, 0.03);
   border-color: rgba(240, 139, 171, 0.15);
+}
+
+[data-bs-theme='dark'] .footer-name {
+  color: var(--brand-primary-dark);
 }
 
 @media (max-width: 991.98px) {

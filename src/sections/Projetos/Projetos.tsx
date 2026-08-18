@@ -30,7 +30,11 @@ export function Projetos() {
               </div>
 
               <div className="project-link project-footer">
-                <a href={project.githubUrl} target="_blank">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  aria-label={`Abrir repositório GitHub do projeto ${project.title}`}
+                >
                   🐙 GitHub
                 </a>
               </div>

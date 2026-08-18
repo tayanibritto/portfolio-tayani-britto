@@ -7,9 +7,6 @@ export function Footer() {
         <p className="mb-4">Desenvolvedora Front-End e Back-End Python</p>
 
         <div className="d-flex justify-content-center gap-4 flex-wrap mb-4">
-          <a href="mailto:mad.britto@gmail.com" target="_blank">
-            Enviar e-mail
-          </a>
           <a href="https://github.com/tayanibritto" target="_blank">
             GitHub
           </a>

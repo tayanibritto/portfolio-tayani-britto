@@ -33,7 +33,7 @@ export function Hero() {
 
         <div className="col-12 col-lg-6">
           <Image
-            src="/hero.webp"
+            src="/hero2.webp"
             alt="Foto de perfil"
             className="img-fluid rounded-circle hero-image"
             width={300}

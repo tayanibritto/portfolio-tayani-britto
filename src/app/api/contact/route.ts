@@ -1,9 +1,14 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
+    const apiKey = process.env.RESEND_API_KEY;
+
+    if (!apiKey) {
+      throw new Error('RESEND_API_KEY não configurada.');
+    }
+
+    const resend = new Resend(apiKey);
     const body = await request.json();
     const { name, email, message, website } = body;
     if (website) {

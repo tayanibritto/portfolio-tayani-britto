@@ -32,8 +32,13 @@ export const metadata: Metadata = {
       'Portfolio profissional de Tayani Britto. Desenvolvedora Full Stack Python e Front-End especializada em React,  Next.js, TypeScript e automação de processos.',
     url: 'https://tayanibritto-dev.vercel.app',
     siteName: 'Portfólio de Tayani Britto',
-    locale: 'pt-BR',
+    locale: 'pt_BR',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tayani Britto | Desenvolvedora Full Stack Python',
+    description: 'Portfólio profissional de Tayani Britto.',
   },
 };
 

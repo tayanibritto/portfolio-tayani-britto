@@ -155,10 +155,6 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.theme-switch::before {
-  display: none;
-}
-
 .form-check-input.theme-switch:checked {
   background-color: #ffe8f0 !important;
   border-color: #d85a81 !important;
@@ -173,21 +169,6 @@ a:hover {
 .theme-switch:checked:focus,
 .theme-switch:checked:focus-visible {
   outline: none !important;
-}
-
-.theme-switch:focus,
-.theme-switch:focus-visible,
-.theme-switch:checked:focus,
-.theme-switch:checked:focus-visible {
-  box-shadow: none !important;
-}
-
-.form-check-input.theme-switch:checked {
-  background-color: #ffe8f0 !important;
-
-  border-color: #d85a81 !important;
-
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23e86a92'/%3e%3c/svg%3e") !important;
 }
 
 .form-check-input.theme-switch:focus,
@@ -220,8 +201,45 @@ a:hover {
   cursor: default;
 }
 
+.project-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.desktop-arrow {
+  display: inline-block;
+}
+
+.mobile-arrow {
+  display: none;
+}
+
+.carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #c44572;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 30%;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background-color: #c44572;
+  color: white;
+  transform: translateY(-2px);
+}
+
 .project-card {
   height: 100%;
+  min-height: 820px;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -238,6 +256,31 @@ a:hover {
   transform: translateY(-4px);
   border-color: #c44572;
   box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
+}
+
+.project-card ul {
+  min-height: 110px;
+}
+
+.project-description {
+  min-height: 120px;
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  opacity: 0.8;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.project-image:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
 
 .project-link {
@@ -417,6 +460,20 @@ a:hover {
   color: var(--brand-primary-dark);
 }
 
+@media (max-width: 767px) {
+  .project-carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .desktop-arrow {
+    display: none;
+  }
+
+  .mobile-arrow {
+    display: inline-block;
+  }
+}
+
 @media (max-width: 991.98px) {
   .navbar-nav {
     text-align: center;
@@ -432,7 +489,7 @@ a:hover {
     margin: 1rem auto 0;
   }
 
-  .navbar-nav .nav-item.ms-lg-2 {
+  .navbar-nav {
     display: flex;
     justify-content: center;
   }

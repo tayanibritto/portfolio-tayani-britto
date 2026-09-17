@@ -8,7 +8,7 @@ Este projeto foi desenvolvido para consolidar conhecimentos em React, Next.js e 
 
 ## Tecnologias
 
-- Next.js 19
+- Next.js 16.3.5
 - React 19
 - TypeScript
 - Bootstrap 5
@@ -64,9 +64,31 @@ O projeto utiliza:
 - GitHub Actions
 - Formulário controlado por API: Resend
 
+## Projetos Apresentados
+
+### SisPlanBlueMonitor
+
+Sistema desenvolvido em Python para automatizar a comparação de inventários de equipamentos escolares com dados do sistema BlueMonitor.
+Tecnologias: Python, OpenPyXL e Pandas.
+
+### Diário de Bordo
+
+Aplicativo Web Progressivo (PWA) para registro de atividades diárias com funcionamento offline e persistência local.
+Tecnologias: HTML5, CSS3, JavaScript, Service Worker e PWA.
+
+### SisPlanDataMob
+
+Sistema desenvolvido em Python para automatizar a comparação de inventários de tablets e smartphones escolares com dados da plataforma DataMob.
+Tecnologias: Python, OpenPyXL e Pandas.
+
+### Portfólio Profissional
+
+Este mesmo portfólio! Além de apresentar minha experiência profissional, projetos, formação e competência técnica, ainda é meu projeto final do curso de Front-End realizado na EBAC - Escola Britânica de Artes Criativas & Tecnologia.
+Tecnologias: Next.js, React, TypeScript, Bootstrap e Jest.
+
 ## Deploy
 
-Projeto publicado na Vercel: https://tayanibritto-dev.vercel.app/
+Projeto publicado na Vercel: [Portfólio Online](https://tayanibritto-dev.vercel.app/)
 
 ## Licença
 

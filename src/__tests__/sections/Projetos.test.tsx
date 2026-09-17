@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { Projetos } from '@/sections/Projetos/Projetos';
-import { projects } from '@/data/projects';
 
 describe('Projetos', () => {
   it('deve renderizar o título da seção', () => {
@@ -13,23 +12,29 @@ describe('Projetos', () => {
     ).toBeInTheDocument();
   });
 
-  it('deve renderizar todos os projetos', () => {
+  it('deve renderizar os três projetos iniciais do carrossel', () => {
     render(<Projetos />);
 
-    projects.forEach((project) => {
-      expect(screen.getByText(project.title)).toBeInTheDocument();
-    });
+    expect(screen.getByText('SisPlanBlueMonitor')).toBeInTheDocument();
+
+    expect(screen.getByText('Diário de Bordo')).toBeInTheDocument();
+
+    expect(screen.getByText('SisPlanDataMob')).toBeInTheDocument();
   });
 
-  it('deve renderizar o link do GitHub para cada projeto', () => {
+  it('deve renderizar os controles do carrossel', () => {
     render(<Projetos />);
 
-    projects.forEach((project) => {
-      expect(
-        screen.getByRole('link', {
-          name: new RegExp(project.title, 'i'),
-        })
-      ).toHaveAttribute('href', project.githubUrl);
-    });
+    expect(
+      screen.getByRole('button', {
+        name: /projeto anterior/i,
+      })
+    ).toBeInTheDocument();
+
+    expect(
+      screen.getByRole('button', {
+        name: /próximo projeto/i,
+      })
+    ).toBeInTheDocument();
   });
 });

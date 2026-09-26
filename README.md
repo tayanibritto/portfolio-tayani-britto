@@ -6,6 +6,23 @@ Portfólio profissional desenvolvido para apresentar experiências, projetos, fo
 
 Este projeto foi desenvolvido para consolidar conhecimentos em React, Next.js e TypeScript, além de apresentar projetos reais de automação de processos aplicados à área da educação pública.
 
+## Pré-requisitos
+
+Antes de executar o projeto, certifique-se de possuir:
+
+- Node.js 24.x
+- npm 11.x
+
+Verifique as versões instaladas:
+
+```bash
+node-v
+```
+
+```bash
+npm-v
+```
+
 ## Tecnologias
 
 - Next.js 16.3.5

@@ -1,4 +1,6 @@
 import { Resend } from 'resend';
+import { contactSchema } from '@/schemas/contactSchema';
+import { z } from 'zod';
 
 export async function POST(request: Request) {
   try {
@@ -10,7 +12,22 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
     const body = await request.json();
-    const { name, email, message, website } = body;
+    const validationResult = contactSchema.safeParse(body);
+
+    if (!validationResult.success) {
+      return Response.json(
+        {
+          success: false,
+          errors: z.flattenError(validationResult.error),
+        },
+        {
+          status: 400,
+        }
+      );
+    }
+
+    const { name, email, message, website } = validationResult.data;
+
     if (website) {
       return Response.json(
         {

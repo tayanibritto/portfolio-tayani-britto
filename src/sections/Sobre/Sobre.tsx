@@ -10,53 +10,53 @@ export function Sobre() {
       <h2 className="display-6 fw-bold mb-4">Sobre Mim</h2>
 
       <p className="lead text-primary">
-        Sou desenvolvedora em formação, com foco em Desenvolvimento Full Stack Python e Front-End,
-        em transição de carreira após mais de uma década de experiência na área administrativa e
+        Sou Desenvolvedora Full Stack Python em formação pela EBAC e graduada em Tecnologia em
+        Análise e Desenvolvimento de Sistemas pela UNILINS, em transição de carreira para o
+        desenvolvimento de software após mais de uma década de experiência na área administrativa e
         educacional do setor público.
       </p>
 
       {expanded && (
         <>
           <p>
-            Minha relação com a tecnologia não é recente. Sou graduada em Tecnologia em Análise e
-            Desenvolvimento de Sistemas desde 2012 e, desde minha adolescência, já explorava HTML,
-            CSS, JavaScript e PHP por interesse próprio. Embora minha trajetória profissional tenha
-            seguido inicialmente pela área da educação e administração pública, a programação sempre
-            esteve presente como uma paixão e um objetivo de longo prazo.
+            Minha conexão com a tecnologia não é recente. Desde a adolescência, explorava
+            tecnologias como HTML, CSS, JavaScript e PHP por interesse próprio, mantendo a
+            programação como um objetivo constante ao longo da minha trajetória. Em 2012, concluí
+            minha graduação em Análise e Desenvolvimento de Sistemas e, em 2025, decidi retomar
+            ativamente minha área de formação, direcionando minha carreira para o desenvolvimento de
+            software.
           </p>
 
           <p>
-            Atuei desde 2013 na Secretaria da Educação do Estado de São Paulo, na Diretoria de
-            Ensino - Região de Lins, onde trabalhei nas áreas de recursos humanos, finanças e
-            liderança, chegando a ocupar o cargo de Diretora do Núcleo de Finanças. Essa vivência me
-            permitiu desenvolver competências essenciais como comunicação, organização, visão
-            sistêmica, tomada de decisão, gestão de processos e trabalho em equipe.
+            Atualmente, desenvolvo projetos com foco em Python, automação de processos, tratamento e
+            validação de dados e aplicações web. Entre os projetos realizados, destaco soluções
+            desenvolvidas para automatizar a comparação e validação de inventários escolares,
+            reduzindo atividades manuais, identificando inconsistências e aumentando a
+            confiabilidade dos dados por meio de Python, Pandas e OpenPyXL.
           </p>
 
           <p>
-            Durante esse período, também adquiri sólida familiaridade com legislações, com destaque
-            para a Lei Geral de Proteção de Dados (LGPD), tema extremamente relevante para a área de
-            tecnologia da informação. Além disso, tive experiência com trabalho remoto, utilizando
-            ferramentas colaborativas como o Microsoft Teams, o que exigiu rápida adaptação,
-            autonomia e disciplina.
+            Minha experiência no setor público contribuiu para o desenvolvimento de competências
+            como organização, comunicação, visão sistêmica, resolução de problemas, análise de
+            processos e trabalho em equipe. Também adquiri familiaridade com legislações e
+            conformidade de dados, incluindo conhecimentos relacionados à LGPD, além de experiência
+            com ambientes colaborativos e trabalho remoto.
           </p>
 
           <p>
-            Em 2025, decidi retomar ativamente minha área de formação e direcionar minha carreira
-            para o desenvolvimento de software. Atualmente, curso Desenvolvimento Full Stack Python
-            pela EBAC - Escola Britânica de Artes Criativas e Tecnologia, com foco também em
-            Desenvolvimento Front-End, consolidando fundamentos técnicos e construindo projetos
-            práticos. Recentemente, iniciei os estudos na área de Cibersegurança através do Programa
-            Hackers do Bem, parceria entre o SENAI e o RNP, para agregar ainda mais conhecimento
-            para tornar meus projetos seguros e confiáveis.
+            No desenvolvimento de software, venho consolidando conhecimentos em HTML, CSS,
+            JavaScript, TypeScript, React, Next.js, Python, Node.js, FastAPI, PostgreSQL, Git,
+            GitHub, CI/CD e integração de APIs. Também estou ampliando minha formação em
+            cibersegurança por meio do programa Hackers do Bem, buscando aplicar boas práticas de
+            segurança ao desenvolvimento de aplicações.
           </p>
 
           <p>
-            Acredito que minha bagagem profissional, aliada à minha formação técnica e ao
-            aprendizado contínuo, possibilita que eu ofereça não apenas código, mas também
-            maturidade profissional, responsabilidade e visão de negócio. Estou motivada e
-            comprometida com essa nova etapa, buscando oportunidades para crescer, aprender e
-            contribuir como desenvolvedora.
+            Acredito que a combinação entre formação técnica, experiência profissional e aprendizado
+            contínuo me permite contribuir com soluções eficientes, organização de processos e foco
+            na qualidade das entregas. Estou em busca de oportunidades como Desenvolvedora Full
+            Stack Python, Desenvolvedora Back-End Python ou Desenvolvedora Front-End, onde eu possa
+            continuar aprendendo, evoluindo tecnicamente e gerar impacto por meio da tecnologia.
           </p>
         </>
       )}

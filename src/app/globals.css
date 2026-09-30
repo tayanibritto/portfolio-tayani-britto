@@ -311,6 +311,17 @@ a:hover {
   box-shadow: 0 12px 24px rgba(232, 106, 146, 0.15);
 }
 
+.experience-period {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background-color: rgba(232, 106, 146, 0.12);
+  color: #c44572;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
 .contact-card {
   display: block;
   height: 100%;

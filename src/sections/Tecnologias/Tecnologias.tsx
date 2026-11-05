@@ -17,16 +17,7 @@ const technologies = {
     'Web Design Responsivo',
   ],
 
-  backend: [
-    'Python',
-    'FastAPI', 
-    'Node.js', 
-    'SQLite', 
-    'Docker', 
-    'Pydantic', 
-    'Redis', 
-    'Kafka'
-  ],
+  backend: ['Python', 'FastAPI', 'Node.js', 'SQLite', 'Docker', 'Pydantic', 'Redis', 'Kafka'],
 
   tools: ['Git', 'GitHub', 'GitHub Actions', 'Vercel', 'ESLint', 'Prettier', 'Jest'],
 

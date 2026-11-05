@@ -45,4 +45,18 @@ export const projects: Project[] = [
     highlights: ['Dark Mode', 'SEO', 'Acessibilidade', 'Responsividade'],
     githubUrl: 'https://github.com/tayanibritto/portfolio-tayani-britto',
   },
+  {
+    title: 'SisScholarInv',
+    imageUrl: '/projects/sisscholarinv.webp',
+    description:
+      'Sistema em Python para análise visual de inventários escolares da SEDUC/SP. Ele permite identificar rapidamente a situação dos equipamentos de uma unidade escolar.',
+    technologies: ['Python', 'Tkinter', 'Pandas', 'OpenPyXL', 'Matplotlib'],
+    highlights: [
+      'Contagem automática dos equipamentos',
+      'Consolidação de status',
+      'Gráfico interativo',
+      'Resumo automático para compartilhamento',
+    ],
+    githubUrl: 'https://github.com/tayanibritto/SisScholarInv',
+  },
 ];

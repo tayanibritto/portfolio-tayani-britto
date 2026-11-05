@@ -17,11 +17,11 @@ const technologies = {
     'Web Design Responsivo',
   ],
 
-  backend: ['Python', 'FastAPI', 'Node.js'],
+  backend: ['Python', 'FastAPI', 'Node.js', 'SQLite', 'Docker', 'Pydantic', 'Redis', 'Kafka'],
 
   tools: ['Git', 'GitHub', 'GitHub Actions', 'Vercel', 'ESLint', 'Prettier', 'Jest'],
 
-  skills: ['CI/CD', 'Conhecimento de hardware', 'Noções de cibersegurança'],
+  skills: ['CI/CD', 'Testes automatizados', 'Conhecimento de hardware', 'Noções de cibersegurança'],
 };
 
 export function Tecnologias() {

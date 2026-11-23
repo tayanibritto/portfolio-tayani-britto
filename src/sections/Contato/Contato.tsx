@@ -65,7 +65,7 @@ export function Contato() {
 
         <div className="col-12 col-md-4">
           <a
-            href="https://www.linkedin.com/in/tayani-britto/"
+            href="https://www.linkedin.com/in/tayanibritto-dev/"
             target="_blank"
             className="contact-card"
           >

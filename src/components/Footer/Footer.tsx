@@ -10,7 +10,7 @@ export function Footer() {
           <a href="https://github.com/tayanibritto" target="_blank">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/tayani-britto/" target="_blank">
+          <a href="https://www.linkedin.com/in/tayanibritto-dev/" target="_blank">
             LinkedIn
           </a>
         </div>
